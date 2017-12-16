@@ -183,6 +183,7 @@
   display: flex;
   border: 1px solid #e2e2e2;
   padding-bottom: 8px;
+  background: #fff;
 }
 
 .section_header .questions_to_answer_icon {
