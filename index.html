@@ -1,0 +1,47 @@
+<!doctype html>
+<html ng-app="myApp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Angular 1.6.4</title>
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./components/sideMenu/style.css">
+  <link rel="stylesheet" href="./components/navbar/style.css">
+  <link rel="stylesheet" href="./components/mainContent/style.css">
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <script src="./assets/js/angular.min.js"></script>
+  <script src="./assets/js/angular-route.js"></script>
+</head>
+
+
+<body>
+  <div class="headers" ng-include="'components/navbar/navbar.html'"></div>
+  <div class="content_of_page">
+    <div class=" container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="sidebar col-md-2 col-sm-2 " ng-include="'components/sideMenu/sideMenu.html'"></div>
+          <div class="content col-md-6 col-sm-8" ng-include="'components/mainContent/mainContent.html'"></div>
+          <div class="content col-md-2 col-sm-2" ng-include="'components/rightsidemenu/rightsidemenu.html'"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- scripts -->
+  <script src="./assets/js/jquery-3.2.1.slim.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script type="text/javascript" src="./components/sideMenu/script.js"></script>
+  <script type="text/javascript" src="./components/navbar/script.js"></script>
+  <script type="text/javascript" src="./components/mainContent/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!-- header -->
+<div class="navbar container" ng-controller="navbarCtrl as navbar">
+  <div class="header_inner ">
+    <!-- header logo-->
+    <div class="header_logo">
+      <a class="logo" href="index">
+            <span>
+            <img src="../../assets/images/logo.png" width="80px">
+          </a>
+    </div>
+
+    <!-- header contents -->
+    <div class="header_contents">
+      <div class="header_nav">
+        <a class="navLink active" href="#">
+            <span ng-include="'./components/navbar/icons/home.html'"></span>
+            <span ng-repeat="navs in navbar.data[0]">
+              <p>{{navs}}</p>
+            </span>
+          </a>
+        <a class="navLink" href="#">
+            <span ng-include="'./components/navbar/icons/answer.html'"></span>
+            <span ng-repeat="navs in navbar.data[1]">
+              <p>{{navs}}</p>
+            </span>
+          </a>
+        <a class="navLink" href="#">
+            <span ng-include="'./components/navbar/icons/notif.html'"></span>
+            <span ng-repeat="navs in navbar.data[2]">
+              <p>{{navs}}</p>
+            </span>
+          </a>
+      </div>
+    </div>
+
+    <!-- filter  -->
+    <div class="filter">
+      <input type="text" placeholder="Search Quora" name="search">
+    </div>
+
+    <!-- profile pic -->
+    <div class="profilepic ">
+      <img src="../../assets/images/profilePic.jpg" class="img-circle" alt="xyz" height="25px" width="25px">
+    </div>
+
+    <!-- add question -->
+    <div class="addQuestion">
+      <input type="button" name="add" value="Add Question">
+    </div>
+  </div>
+</div>

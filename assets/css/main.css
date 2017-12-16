@@ -1,0 +1,13 @@
+.content_of_page {
+  /*background-color: #fafafa;*/
+  padding-top: 20px;
+}
+
+body {
+  background-color: #fafafa;
+
+}
+
+*, ::after, ::before {
+    box-sizing: content-box !important;
+}

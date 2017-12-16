@@ -1,0 +1,49 @@
+li {
+  list-style: none !important;
+  padding: 5px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.cover {
+  font-size: 14px;
+}
+
+.menu_title {
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.menu_title h1 {
+  color: #333;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.menu_title a {
+  color: #999;
+  text-decoration: none;
+  float: right;
+}
+
+.list a:hover, .list a:active {
+  background: #ececec;
+  color: #666;
+  border-radius: 3px;
+  font-weight: 400;
+  cursor: default;
+}
+
+.list a {
+  color: #666;
+  border-radius: 3px;
+  font-weight: 400;
+  cursor: default;
+}

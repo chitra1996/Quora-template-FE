@@ -1,0 +1,54 @@
+<div class="question">
+  <div class="profilepic">
+    <span><img src="../../assets/images/profilePic.jpg" class="img-circle" alt="xyz" height="20px" width="20px"></span>
+  </div>
+  <div class="user">
+    <a href="#"><span>Chitrangana Singh</span></a>
+  </div>
+  <div class="ask">
+    <span><a href="#">What is your question?</a></span>
+  </div>
+</div>
+<div class="section_header">
+  <div class="icon_frame">
+    <span class="questions_to_answer_icon"></span>
+  </div>
+  <div class="header_text">
+    <h1>Questions for You</h1>
+  </div>
+</div>
+<div ng-controller="mainContentCtrl as MainContent">
+  <div class="card" ng-repeat="content in MainContent.data">
+    <div class="reason_main">
+      <span>{{content.type}}</span>
+      <span class="bullet"> · </span>
+      <span>{{content.topic}}</span>
+    </div>
+    <div class="title_main">
+      <p><a href="#">{{content.title}}</a> </p>
+      <p>{{content.answer}}</p>
+    </div>
+    <div class="main_foot">
+      <span>{{content.lastFollowed}}</span>
+      <span class="bullet"> · </span>
+      <span>{{content.noOfAnswers}} Answers</span>
+    </div>
+    <div class="selection">
+      <div class="button">
+        <input type="button" name="" value="{{content.chooseTo}}">
+        <input type="button" name="" value="{{content.orChooseTo}}">
+        <span>Follow {{content.Followers}}</span>
+      </div>
+      <div class="footer-right ShareIcons QuestionIcons">
+        <a class="facebook" href="fb.com"><span class="icon icon_facebook"></span></a>
+        <a class="twitter" href="fb.com"><span class="icon icon_twitter"></span></a>
+        <a class="share" href="fb.com"><span class="icon icon_share"></span></a>
+        <div class="overflow">
+          <a class="overflow_link" href="#" id="__w2_OnPTowM_overflow_link">
+            <span class="dots overflow_dots"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<!-- side menu  -->
+<div class="cover" ng-controller="sideMenuctrl as Menu">
+  <div class="menu_title">
+    <h1>Feeds <span><a href="#">edit</a></span></h1>
+  </div>
+  <ul>
+    <li class="list" ng-repeat="feed in Menu.data"><a href="#">{{feed}}</a></li>
+  </ul>
+</div>

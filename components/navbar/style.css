@@ -1,0 +1,102 @@
+.navbar {
+  margin: auto;
+  background: #fff;
+  padding-top: 10px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 800;
+  font-size: 14px;
+  color: #fff;
+  display: table;
+}
+
+.headers {
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 3px 2px -2px rgba(200, 200, 200, 0.2);
+}
+
+.header_logo, .header_contents, .filter, .profilepic, .addQuestion {
+  float: left;
+  padding: 5px;
+}
+
+.header_nav a:active, .header_nav a:hover {
+  text-decoration: none;
+  color: #b92b27 !important;
+  border-bottom: #b92b27 !important;
+}
+
+.header_nav a {
+  text-decoration: none;
+  color: #666;
+}
+
+.header_nav>span {
+  white-space: nowrap;
+}
+
+.navLink {
+  padding: 10px 15px;
+}
+
+.navLink p {
+  display: inline;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  line-height: 35px;
+}
+
+.navLink:hover {
+  text-decoration: none;
+  color: #b92b27 !important;
+  border-bottom: #b92b27 !important;
+}
+
+.addQuestion>input {
+  margin-left: 8px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: opacity ease-in-out 100ms, color ease-in-out 100ms, background-color ease-in-out 100ms, border-color ease-in-out 100ms;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px 0 rgba(200, 200, 200, 0.2);
+  display: inline-block;
+  font-weight: 500;
+  outline: 0;
+  padding: 3px 7px 4px 7px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid #962520;
+  background: #b92b27;
+  color: #fff;
+  float: left;
+}
+
+.filter {
+  display: table;
+  box-sizing: border-box;
+  max-width: 50%;
+  width: 43%;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  padding-left: 26px;
+  background: url(//qsf.ec.quoracdn.net/-3-images.new_grid.QuoraSearch.png-26-56e8792e88146693.png) no-repeat 8px center;
+  background-size: 13px;
+}
+
+.filter input {
+  border: none;
+}
+
+.filter input:focus {
+  border: none;
+}
